@@ -11,31 +11,6 @@ $(function () {
 
 
 
-
-
-/*******MOUSEOVER/MOUSEOUT*********
-********HIDE/SHOW DIV OVERLAY******/
-
-// The image turns grey on :hover thru CSS, but below
-// the text is transparent in CSS and is made visible, then invisible
-//again
-
-$(".dish-col").mouseover(function(){
-
-    $(this).find(".work-desc h2, .work-desc p").css("color", "rgba(0,0,0,1)");
-
-});
-
-$(".dish-col").mouseout(function(){
-
-    $(this).find(".work-desc h2, .work-desc p").css("color", "rgba(0,0,0,0)");
-
-});
-
-
-
-
-
 /*====================================================
                         NAVIGATION
 ====================================================*/
@@ -80,6 +55,28 @@ $(function(){
        
         $(".navbar-toggle").click();
     });
+});
+
+
+
+
+/*******MOUSEOVER/MOUSEOUT*********
+********HIDE/SHOW DIV OVERLAY******/
+
+// The image turns grey on :hover thru CSS, but below
+// the text is transparent in CSS and is made visible, then invisible
+//again
+
+$(".dish-col").mouseover(function(){
+
+    $(this).find(".work-desc h2, .work-desc p").css("color", "rgba(0,0,0,1)");
+
+});
+
+$(".dish-col").mouseout(function(){
+
+    $(this).find(".work-desc h2, .work-desc p").css("color", "rgba(0,0,0,0)");
+
 });
 
 
